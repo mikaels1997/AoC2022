@@ -10,7 +10,7 @@ game_logic = {  # Opponent input: (losing player move, draw player move, winning
     "C": ("Y", "Z", "X")
 }
 
-def calculate_points(strategy):
+def normal_strategy(strategy):
     total_score = 0
     for inputs in strategy:
         result_points = 0
@@ -45,5 +45,5 @@ def read_input(path):
 
 if __name__ == "__main__":
     strategy = read_input("Day 2 Rock Paper Scissors/input.txt")
-    print("Normal strategy total points:", calculate_points(strategy))
+    print("Normal strategy total points:", normal_strategy(strategy))
     print("Secret strategy total points:", secret_strategy(strategy))
