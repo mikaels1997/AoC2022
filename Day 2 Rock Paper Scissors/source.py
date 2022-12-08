@@ -24,7 +24,7 @@ def calculate_points(strategy):
 def secret_strategy(strategy):
     total_score = 0
     for inputs in strategy:
-        player_input = game_logic[inputs[0]][0]
+        player_input = game_logic[inputs[0]][0]     # Losing move
         if inputs[1] == "Y":
             total_score += 3
             player_input = game_logic[inputs[0]][1] # Drawing move
