@@ -51,11 +51,11 @@ def top_crates(stacks):
 if __name__ == "__main__":
 
     # CrateMover9000
-    stacks, procedure = parse_input("Day 5 Supply Stacks/input.txt")
+    stacks, procedure = parse_input("data/input5.txt")
     updated_stack = follow_procedure(stacks, procedure)
     print("Top crates with CrateMover9000:", top_crates(updated_stack))
 
     # CrateMover9001
-    stacks, procedure = parse_input("Day 5 Supply Stacks/input.txt")
+    stacks, procedure = parse_input("data/input5.txt")
     updated_stack = follow_procedure(stacks, procedure, enhanced=True)
     print("Top crates with CrateMover9001:", top_crates(updated_stack))

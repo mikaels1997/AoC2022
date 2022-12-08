@@ -28,6 +28,6 @@ def partially_contained(pairs):
 
 
 if __name__ == "__main__":
-    pairs = parse_input("Day 4 Camp Cleanup/input.txt")
+    pairs = parse_input("data/input4.txt")
     print("Fully contained pairs:", fully_contained(pairs))
     print("Partially contained pairs:", partially_contained(pairs))

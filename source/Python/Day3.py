@@ -37,7 +37,7 @@ def common_priority(comp_list, priority_dict):
     return total_priority
 
 if __name__ == "__main__":
-    rucksacks = parse_input("Day 3 Rucksack Reorganization/input.txt")
+    rucksacks = parse_input("data/input3.txt")
     priority_dict = form_priority_dict()
     print("Total priority for common items:", common_item_analysis(rucksacks, priority_dict))
     print("Priority with elf groups:", elf_group_analysis(rucksacks, priority_dict))
