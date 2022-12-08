@@ -34,7 +34,7 @@ def secret_strategy(strategy):
         total_score += points[player_input]
     return total_score
 
-def read_input(path):
+def parse_input(path):
     game_list = []
     with open(path) as f:
         for line in f.readlines():
@@ -44,6 +44,6 @@ def read_input(path):
 
 
 if __name__ == "__main__":
-    strategy = read_input("Day 2 Rock Paper Scissors/input.txt")
+    strategy = parse_input("Day 2 Rock Paper Scissors/input.txt")
     print("Normal strategy total points:", normal_strategy(strategy))
     print("Secret strategy total points:", secret_strategy(strategy))

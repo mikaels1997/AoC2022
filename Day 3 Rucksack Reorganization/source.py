@@ -1,4 +1,4 @@
-def read_input(path):
+def parse_input(path):
     rucksack_list = []
     with open(path) as f:
         for line in f.readlines():
@@ -37,7 +37,7 @@ def common_priority(comp_list, priority_dict):
     return total_priority
 
 if __name__ == "__main__":
-    rucksacks = read_input("Day 3 Rucksack Reorganization/input.txt")
+    rucksacks = parse_input("Day 3 Rucksack Reorganization/input.txt")
     priority_dict = form_priority_dict()
     print("Total priority for common items:", common_item_analysis(rucksacks, priority_dict))
     print("Priority with elf groups:", elf_group_analysis(rucksacks, priority_dict))
