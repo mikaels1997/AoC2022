@@ -12,15 +12,14 @@ def parse_input(path):
         return [line.split(" ") for line in f.read().splitlines()]
     
 def read_commands(commands, num_of_knots):
-    visited_positions = []
+    visited_positions = set()
     knots = np.zeros((num_of_knots, 2)).astype(int)         # Knot positions
     indexes = [[x, x+1] for x in range(knots.shape[0]-1)]   # The sequential index vectors
     for com in commands:                                    # For every command
         for i in range(int(com[1])):                        # For the number of moves
             knots[0] += move_vectors[com[0]]                # Move head
             [move_knots([knots[i[0]], knots[i[1]]]) for i in indexes] # Move knots sequentially
-            if [knots[-1][0], knots[-1][1]] not in visited_positions:
-                visited_positions.append([knots[-1][0], knots[-1][1]]) # Add visited
+            visited_positions.add((knots[-1][0], knots[-1][1])) # Add visited
     return len(visited_positions)
 
 def move_knots(knots):
