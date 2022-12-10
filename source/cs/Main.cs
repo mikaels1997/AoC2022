@@ -6,8 +6,7 @@ namespace AoC
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            var test = new Day1("HEP");
+            new Day1();
         }
     }
 }
