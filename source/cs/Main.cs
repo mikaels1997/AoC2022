@@ -7,6 +7,7 @@ namespace AoC
         static void Main(string[] args)
         {
             new Day1();
+            new Day2();
         }
     }
 }

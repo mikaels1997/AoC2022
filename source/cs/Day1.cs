@@ -8,6 +8,7 @@ namespace AoC
     {
         private string InputPath = "../../data/input1.txt";
         private List<int> Calories = new List<int>() { 0 };
+        
         public Day1 ()
         {
             this.ParseInput();
