@@ -6,7 +6,7 @@ def parse_input(path):
         return [list((int(char) for char in line)) for line in lines][:-1]
 
 def count_visible(trees):
-    visible = np.ones((trees.shape[0], trees.shape[1], 4))  # Axis 2: boolean for every direction
+    visible = np.ones((trees.shape[0], trees.shape[1], 4))  # Axis 2: boolean for 4 directions
     for r, row in enumerate(trees):
         for c, tree in enumerate(row):
             visible[0:r, c, 0][trees[0:r, c] <= tree] = 0   # Obscure up
