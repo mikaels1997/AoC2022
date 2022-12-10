@@ -5,18 +5,15 @@ dir_sizes = {}
 dir_contents = {}
 
 def parse_input(path):
-    inputs = []
     with open(path) as f:
-        for line in f.read().splitlines():
-            inputs.append(line)
-    return inputs
+        return f.read().splitlines()
 
 def analyze_inputs(inputs, path):
     for input in inputs:
         target = check_target(path, input)
         input_list = input.split(" ")
         if input_list[0] == "$":
-            path = update_path(input_list[1], path, target) # Update current path
+            path = update_path(path, target) # Update current path
             if target and target not in dir_sizes:  # Begin tracking the dir
                 dir_sizes[target] = 0
                 dir_contents[target] = []
@@ -43,7 +40,7 @@ def check_target(path, input):
         new_path = ('/').join(new_path)[1:]
         return new_path
     
-def update_path(command, path, target=None):
+def update_path(path, target=None):
     if not target:
         return path
     if target == "/":

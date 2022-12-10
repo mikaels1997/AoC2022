@@ -1,9 +1,7 @@
 def parse_input(path):
-    data_stream = []
     with open(path) as f:
-        for line in f.read().splitlines():
-            data_stream += [*line]
-    return data_stream
+        lol =  [[*line] for line in f.read().splitlines()][0]
+        return lol
 
 def signal_start(stream, signal_length):
     char_buffer = []
