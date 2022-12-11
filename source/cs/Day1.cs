@@ -12,8 +12,8 @@ namespace AoC
         public Day1 ()
         {
             this.ParseInput();
-            Console.WriteLine("Most calories:" + this.FindTopSum(1));  // Part 1
-            Console.WriteLine("Sum of top 3 calories" + this.FindTopSum(3));  // Part 2
+            Console.WriteLine("Most calories: " + this.FindTopSum(1));  // Part 1
+            Console.WriteLine("Sum of top 3 calories: " + this.FindTopSum(3));  // Part 2
         }
 
         private void ParseInput() {
