@@ -6,7 +6,7 @@ namespace AoC
 {
     class Day3
     {
-        private string InputPath = "../../data/input3.txt";
+        private string InputPath = "../../data/input03.txt";
         private List<string> Rucksacks = new List<string>();
         private const string Letters = "abcdefghijklmnopqrstuvwxyz" + 
            "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

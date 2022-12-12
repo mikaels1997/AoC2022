@@ -6,7 +6,7 @@ namespace AoC
 {
     class Day4
     {
-        private string InputPath = "../../data/input4.txt";
+        private string InputPath = "../../data/input04.txt";
         private List<int[]> Pairs = new List<int[]>();
         public Day4() {
             this.ParseInput();

@@ -14,6 +14,6 @@ def signal_start(stream, signal_length):
         char_buffer.pop(0)
 
 if __name__ == "__main__":
-    stream = parse_input("data/input6.txt")
+    stream = parse_input("data/input06.txt")
     print("Start index for packet:", signal_start(stream, 4))
     print("Start index for message:", signal_start(stream, 14))

@@ -6,7 +6,7 @@ namespace AoC
 {
     class Day1
     {
-        private string InputPath = "../../data/input1.txt";
+        private string InputPath = "../../data/input01.txt";
         private List<int> Calories = new List<int>() { 0 };
         
         public Day1 ()

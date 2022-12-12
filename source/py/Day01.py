@@ -20,7 +20,7 @@ def top_calory_sum(elf_dict, top_amount):
     return sum(sorted_list[0:top_amount])
 
 if __name__ == "__main__":
-    elf_dict = parse_input("data/input1.txt")
+    elf_dict = parse_input("data/input01.txt")
     most_calories = find_most_calories(elf_dict)
     print("Most calories:", most_calories)
     top_three_cal = top_calory_sum(elf_dict, 3)

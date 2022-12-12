@@ -38,6 +38,6 @@ def find_blocking(vector, value):
 
 
 if __name__ == "__main__":
-    trees = np.array(parse_input("data/input8.txt"))
+    trees = np.array(parse_input("data/input08.txt"))
     print("Number of visible trees:", count_visible(trees))
     print("Maximum score for tree:", find_maximum_score(trees))

@@ -5,7 +5,7 @@ namespace AoC
 {
     class Day2
     {
-        private string InputPath = "../../data/input2.txt";
+        private string InputPath = "../../data/input02.txt";
         // Opponent input: (losing player move, draw player move, winning player move)
         private Dictionary<char, char[]> GameLogic = new Dictionary<char, char[]>() {
             {'A', new char[] {'Z', 'X', 'Y'}},

@@ -32,6 +32,6 @@ def move_knots(knots):
         knots[1] += mov_vector
 
 if __name__ == "__main__":
-    commands = parse_input("data/input9.txt")
+    commands = parse_input("data/input09.txt")
     print("Visited positions with 2 knots:", read_commands(commands, 2))
     print("Visited positions with 10 knots:", read_commands(commands, 10))

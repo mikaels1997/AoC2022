@@ -67,7 +67,7 @@ def check_smallest(dir_sizes):
     return smallest_size
 
 if __name__ == "__main__":
-    inputs = parse_input("data/input7.txt")
+    inputs = parse_input("data/input07.txt")
     analyze_inputs(inputs, current_path)
     print("Sum of sizes of dirs:", sum_of_sizes(dir_sizes, 100000))
     print("Smallest dir to remove:", check_smallest(dir_sizes))

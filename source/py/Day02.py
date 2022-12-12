@@ -44,6 +44,6 @@ def parse_input(path):
 
 
 if __name__ == "__main__":
-    strategy = parse_input("data/input2.txt")
+    strategy = parse_input("data/input02.txt")
     print("Normal strategy total points:", normal_strategy(strategy))
     print("Secret strategy total points:", secret_strategy(strategy))
