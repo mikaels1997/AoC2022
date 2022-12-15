@@ -7,17 +7,17 @@ namespace AoC
     {
         private string InputPath = "../../data/input02.txt";
         // Opponent input: (losing player move, draw player move, winning player move)
-        private Dictionary<char, char[]> GameLogic = new Dictionary<char, char[]>() {
+        private Dictionary<char, char[]> GameLogic = new () {
             {'A', new char[] {'Z', 'X', 'Y'}},
             {'B', new char[] {'X', 'Y', 'Z'}},
             {'C', new char[] {'Y', 'Z', 'X'}}
         };
-        private Dictionary<char, int> Points = new Dictionary<char, int>() {
+        private Dictionary<char, int> Points = new () {
             {'X', 1},
             {'Y', 2},
             {'Z', 3}
         };
-        private List<string> Strategy = new List<string>();
+        private List<string> Strategy = new ();
         
         public Day2 ()
         {
